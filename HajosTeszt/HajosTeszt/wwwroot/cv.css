@@ -1,0 +1,51 @@
+﻿body {
+    background-color: #30B3F9;
+}
+
+div {
+    margin: 30px;
+    padding: 10px;
+    border: 2px solid #F93030;
+    border-radius: 30px;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    border: 2px solid #F93030;
+    border-radius: 30px;
+    font-size: 40px;
+}
+
+h2 {
+    border: 2px dashed #F93030;
+    border-radius: 30px;
+    padding: 10px;
+    width: 350px;
+}
+
+a {
+    background-color: #f93030;
+    color: black;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+    a:hover {
+        background-color: lightgrey;
+    }
+
+#listak {background-color: lightgrey;}
+
+.megiskek {
+    background-color: #f93030;
+    border-radius: 30px;
+    width: 150px;
+}
+
+.sorrendi {font-style: italic;}
+
+img {
+    display: block;
+    margin: auto;
+}
