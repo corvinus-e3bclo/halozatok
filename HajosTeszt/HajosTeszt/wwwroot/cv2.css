@@ -1,0 +1,130 @@
+﻿ *{
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: bold;
+    text-align: center;
+}
+
+#article,
+#aside,
+#footer,
+#szoveg,
+#header,
+#nav {
+    padding: 20px;
+}
+
+#header {
+    background-color: tomato;
+}
+
+#nav {
+    background-color: deepskyblue;
+}
+
+#article {
+    background-color: gold;
+    text-align: left;
+}
+
+#aside {
+    background-color: lightgreen;
+    text-align: left;
+}
+
+#szoveg {
+    background-color: orange;
+    text-align: left;
+}
+
+#footer {
+    background-color: hotpink;
+}
+
+#nav {
+    display: flex;
+}
+
+    #nav a {
+        text-decoration: none;
+        color: black;
+        flex: 1 1 auto;
+    }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    border: 2px solid #30B3F9;
+    border-radius: 30px;
+    font-size: 40px;
+}
+
+h2 {
+    border: 2px dashed #F93030;
+    border-radius: 30px;
+    padding: 10px;
+    width: 350px;
+}
+
+a {
+    background-color: #f93030;
+    color: black;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+    a:hover {
+        background-color: lightgrey;
+    }
+
+#aside {
+    background-color: lightgrey;
+}
+
+.megiskek {
+    background-color: #f93030;
+    border-radius: 30px;
+    width: 150px;
+}
+
+.sorrendi {
+    font-style: italic;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: 1500px;
+    }
+
+    #main {
+        display: flex;
+    }
+
+    #nav, #header {
+        order: -1;
+    }
+
+    #article {
+        flex: 1 1 70%;
+    }
+
+    #aside {
+        flex: 1 1 30%;
+    }
+}
+
