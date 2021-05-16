@@ -13,12 +13,12 @@ namespace HajosTeszt.Controllers
     [ApiController]
     public class JokeController : ControllerBase
     {
-        // GET: api/<JokeController>
+        // GET: api/jokes
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Joke> Get()
         {
             FunnyDatabaseContext context = new FunnyDatabaseContext();
-            return new string[] { "value1", "value2" };
+            return context.Jokes.ToList();
         }
 
         // GET api/jokes/5
